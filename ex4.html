@@ -1,0 +1,21 @@
+<html>
+
+Fazer uma página que peça os dados: nome do funcionário, setor, salário. Se o setor for vendas dar um acrescimo de 10%. Se o setor for compras, das um acrescimo de 5%.
+
+<script>
+	var nome = prompt("Nome do funcionário: ","");
+		setor = prompt("Setor: ","");
+		salario = parseFloat(prompt("Salário: ",""));
+
+		if(setor == "Vendas"){
+			salario = salario + (10 * salario)/100;
+		}
+		else if(setor == "Compras"){
+			salario = salario + (5 * salario)/100;
+		}
+
+		document.write("<p align=center><font color=purple size=50><br>Nome: " +nome+ "<br>Setor: " +setor+ "<br>Salario: " +salario+ "</p>");
+
+
+</script>
+</html>

@@ -1,0 +1,23 @@
+<html>
+<script>
+	var nome = prompt("Nome: ","");
+		sabor = prompt("Sabor da Pizza: ","");
+		quantidade = parseFloat(prompt("Quantidade: ",""));
+		
+
+		if(sabor == "mussarela"){
+			preco = 30;
+			document.write("<p  align=center><img src=mussarela.png width= 500 hight= 500></p>");
+			document.write("<p align=center><font color=purple size=50><br>Preço: " +preco+" reais</p>");
+		}	
+		else if(sabor == "calabresa"){
+			preco = 35;
+			document.write("<p  align=center><img src=calabresa1.jpg width= 500 hight= 500></p>")
+			document.write("<p align=center><font color=purple size=50><br>Preço: " +preco+" reais</p>");
+		}
+			total = preco * quantidade;
+		document.write("<p align=center><font color=purple size=50><br>Nome: " +nome+ "<br>Sabor: " +sabor+ "<br>Quantidade: " +quantidade+ "<br>Valor a pagar: " +total+ " reais</p>")
+
+		
+</script>
+</html>
