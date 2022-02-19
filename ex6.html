@@ -1,0 +1,42 @@
+<html>
+
+Fazer uma página que peça: 
+Nome, Tipo do Carro (esportivo, luxo, popular), valor do carro.
+Calcular o valor a pagar de cada tipo dependendo dos acessórios: 
+Banco de couro = 2000
+Arcondicionado = 4000 
+
+<script>
+	var nome = prompt("Nome: ","");
+		tipo = prompt("Tipo do Carro: ","");
+		valor = parseFloat(prompt("Valor do Carro: ",""));
+		banco = prompt("Deseja adicionar banco de couro?","");
+		ar = prompt("Deseja adicionar arcondicionado?","");
+
+		if (tipo == "Esportivo"){
+			document.write("<p  align=center><img src=esportivo.jpg width= 500 hight= 500></p>");
+			document.write("<p  align=center>Bugatti Chiron Super Sport</p>");
+		}
+		else if(tipo == "Luxo"){
+			document.write("<p  align=center><img src=luxo.jpg width= 500 hight= 500></p>");
+			document.write("<p  align=center>Ferrari Portofino Sport</p>");
+		}
+		else if(tipo == "Popular"){
+			document.write("<p  align=center><img src=popular.jpg width= 500 hight= 500></p>");
+			document.write("<p  align=center>Fiat Palio</p>");
+		}
+		if (banco == "sim"){
+			valor = valor + 2000;
+		}
+		if (ar == "sim"){
+			valor = valor + 4000;
+		}
+
+		document.write("<p align=center><font color=purple size=50>Nome: " +nome+ "</p>");
+		document.write("<p align=center><font color=purple size=50>Tipo do carro: " +tipo+ "</p>");
+		document.write("<p align=center><font color=purple size=50>valor total: " +valor+ "</p>");
+
+
+
+</script>
+</html>
