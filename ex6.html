@@ -15,15 +15,15 @@ Arcondicionado = 4000
 
 		if (tipo == "Esportivo"){
 			document.write("<p  align=center><img src=esportivo.jpg width= 500 hight= 500></p>");
-			document.write("<p  align=center>Bugatti Chiron Super Sport</p>");
+			document.write("<p  align=center><font color=white size=35><b>Bugatti Chiron Super Sport</p>");
 		}
 		else if(tipo == "Luxo"){
 			document.write("<p  align=center><img src=luxo.jpg width= 500 hight= 500></p>");
-			document.write("<p  align=center>Ferrari Portofino Sport</p>");
+			document.write("<p  align=center><font color=white size=35><b>Ferrari Portofino Sport</p>");
 		}
 		else if(tipo == "Popular"){
 			document.write("<p  align=center><img src=popular.jpg width= 500 hight= 500></p>");
-			document.write("<p  align=center>Fiat Palio</p>");
+			document.write("<p  align=center><font color=white size=35><b>Fiat Palio</p>");
 		}
 		if (banco == "sim"){
 			valor = valor + 2000;
@@ -31,10 +31,10 @@ Arcondicionado = 4000
 		if (ar == "sim"){
 			valor = valor + 4000;
 		}
-
-		document.write("<p align=center><font color=purple size=50>Nome: " +nome+ "</p>");
-		document.write("<p align=center><font color=purple size=50>Tipo do carro: " +tipo+ "</p>");
-		document.write("<p align=center><font color=purple size=50>valor total: " +valor+ "</p>");
+		document.write("<body bgcolor=black>")
+		document.write("<p align=center><font color=white size=50>Nome: " +nome+ "</p>");
+		document.write("<p align=center><font color=white size=50>Tipo do carro: " +tipo+ "</p>");
+		document.write("<p align=center><font color=white size=50>Valor total: " +valor+ "</p>");
 
 
 
