@@ -1,0 +1,28 @@
+<html>
+
+<body bgcolor="cyan">
+	<h1 align="center">Reprodutor de Música</h1>
+<script type="text/javascript">
+	var nome = prompt("Nome: ","");
+		estilo = prompt("Estilo Musical:","");
+
+		if(estilo=="rock"){
+			document.write('<p align=center><embed src="rock.mp3" loop=true autostart=true volume=100></p>');
+			document.write("<p align=center><br><b>"+nome+" esta ouvindo: Guns N' Roses - Sweet Child O' Mine</p>");
+			document.write("<p align=center><img src=guns.jpg width= 300 hight= 300></p>");
+			document.write("<p align=center>She's got a smile that it seems to me<br>Reminds me of childhood memories<br>Where everything was as fresh<br>As the bright blue sky <br><br> Now and then when I see her face <br> She takes me away to that special place<br>And if I stare too long<br>I'd probably break down and cry<br><br>Oh, oh, oh, sweet child of mine<br>Oh, oh, oh, oh, sweet love of mine<br><br>She's got eyes of the bluest skies<br>As if they thought of rain<br>I hate to look into those eyes<br>And see an ounce of pain<br><br>Her hair reminds me of a warm safe place<br>Where, as a child, I'd hide<br>And pray for the thunder and the rain<br>To quietly pass me by<br><br>Oh, oh, oh, sweet child of mine<br>Oh, oh, oh, oh, sweet love of mine<br>Oh, oh, oh, oh, sweet child of mine<br>Ooh, yeah, yeah<br>Ooh! Sweet love of mine<br><br>Where do we go?<br>Where do we go now?<br>Where do we go?<br><br>Where do we go?<br>Where do we go now?<br>Where do we go now?<br><br>Where do we go?<br>Where do we go now?<br>Where do we go?<br>Where do we go?<br><br>Where do we go now?<br>Where do we go?<br>Where do we go now?<br>Where do we go?<br><br>Where do we go now?<br>Where do we go?<br>Where do we go now?<br>Now, now, now<br>Now, now, now, now?<br><br>Sweet child<br>Sweet child of mine</p>")
+		}
+		else if(estilo == "popular"){
+			document.write('<p align=center><embed src="mpb.mp3" loop=true autostart=true volume=100></p>');
+			document.write("<p align=center><br><b>"+nome+" esta ouvindo: Rita Lee - Ovelha Negra</p>");
+			document.write("<p align=center><img src=ritalee.jpg width= 300 hight= 300></p>");
+		}
+		else if(estilo == "sertanejo"){
+			document.write('<p align=center><embed src="sertanejo.mp3" loop=true autostart=true volume=100></p>');
+			document.write("<p align=center><br><b>"+nome+" esta ouvindo: Zé Neto e Cristiano - Ela e Ela</p>");
+			document.write("<p align=center><img src=zenetoecristiano.jpg width= 300 hight= 300></p>");
+		}
+
+</script>
+</body>
+</html>
